@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# -*- mode: ruby -*-
+# -*- coding: utf-8 -*-
+# vi: set ft=ruby :
+# vi: set fileencoding=utf-8 :
+# encoding: utf-8
+
+$LOAD_PATH.unshift 'lib'
+require 'skeleton/init'
+require 'skeleton'
+
+def main
+  Skeleton.run
+end
+
+if $PROGRAM_NAME == __FILE__
+  return_value = main
+  begin
+    exit(return_value)
+  rescue TypeError
+    exit(0)
+  end
+end

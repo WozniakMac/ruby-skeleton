@@ -1,10 +1,11 @@
-#Gumflap
+#Skeleton
 
-A simple live chatting app.
+A simple skeleton app.
 
 ##Getting Started
 
 - `gem install bundler` if you don't have bundler installed already.
-- `bundle install` to install dependencies.
-- `rake spec` to run ruby specs.
-- `bin/gumflap` to run application.
+- `bundle install --path vendor/bundle` to install dependencies.
+- `bundle exec rake spec` to run ruby specs.
+- `bundle exec guard` to automated specs and linting.
+- `bin/skeleton` to run application or server.
