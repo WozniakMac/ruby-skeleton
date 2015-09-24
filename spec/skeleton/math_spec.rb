@@ -6,4 +6,6 @@
 
 require 'spec_helper'
 
-RSpec.describe Skeleton::Domain
+module Skeleton
+  RSpec.describe Domain
+end

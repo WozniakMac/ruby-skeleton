@@ -1,4 +1,4 @@
-# The default 79 character limit is sometimes unproductive.
+# The default 80 character limit is sometimes unproductive.
 LineLength:
   Max: 100
 
@@ -9,3 +9,8 @@ MethodLength:
 RegexpLiteral:
   Exclude:
     - '**/Guardfile'
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/**/*'
